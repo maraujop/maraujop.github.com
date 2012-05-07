@@ -9,49 +9,78 @@
     </head>
 
     <body>
-        <div id="top"></div>
-        <div id="goback"><a rel="nofollow" href="http://www.toThinkOrNotToThink.com">● My Blog</a></div>
+        <div id="wrapper">
+            <div id="top"></div>
+            <div id="goback"><a rel="nofollow" href="http://www.toThinkOrNotToThink.com">● My Blog</a></div>
 
-        <div class="container" id="about">
-            <div class="header">
-                <h1><span id="firstname">MIGUEL</span> <span id="lastname">ARAUJO</span></h1>
-                <p id="description">Django hacker and former sysadmin. Follow my open source work on <a rel="nofollow" href="http://www.github.com/maraujop/">github</a> and stuff I comment on in my twitter <a rel="nofollow" href="http://www.twitter.com/maraujop/">@maraujop</a></p>
+            <div id="about">
+                <div id="header">
+                    <h1><span id="firstname">MIGUEL</span> <span id="lastname">ARAUJO</span></h1>
+                    <p id="description">Python hacker, Djangonaut and former sysadmin. Frontend Stockholm syndrome. You can follow my open source
+                    work on <a rel="nofollow" href="http://www.github.com/maraujop/">Github</a> and stuff I comment
+                    about in my twitter <a rel="nofollow" href="http://www.twitter.com/maraujop/">@maraujop</a></p>
+                </div>
+
+                <div id="projects">
+                    <h2><img src="img/beaker.png" />Projects</h2>
+                    <div class="bar"><div id="bar1"></div></div>
+                    <ul>
+                        <li><span class="bullet">_</span><a rel="nofollow"
+                        href="https://github.com/maraujop/django-crispy-forms">django-crispy-forms</a>: The best way to have DRY Django forms with programmatic layouts.</li>
+
+                        <li><span class="bullet">_</span><a rel="nofollow"
+                        href="https://github.com/maraujop/requests-oauth">requests-oauth</a> and <a rel="nofollow"
+                        href="https://github.com/maraujop/requests-oauth2">requests-oauth2</a>: Consumer Open
+                        Authentication v1 and v2 support for Python requests.</li>
+
+                        <li><span class="bullet">_</span><a rel="nofollow" href="https://github.com/maraujop/django-rules">django-rules</a>: Flexible and scalable Django authorization backend for unified per object permission management.</li>
+                    </ul>
+                </div>
+
+                <div id="talks">
+                    <h2><img src="img/coffee.png" />Talks</h2>
+                    <div class="bar"><div id="bar2"></div></div>
+                    <ul>
+                        <li><span class="bullet">_</span><a rel="nofollow"
+                        href="http://djangocon.us/schedule/presentations/15/">Advanced Django Form Usage</a> @
+                        DjangoCon.us 2011 <a href="http://blip.tv/djangocon/advanced-django-form-usage-5573287">video</a> and <a href="http://speakerdeck.com/u/maraujop/p/advanced-django-forms-usage">slides</a></li>
+                        <li><span class="bullet">_</span>Big Machine Learning @ NIPS 2011 Big Learning workshop</li>
+                        <li><span class="bullet">_</span><a rel="nofollow" href="#">Django workshop</a> @ Betabeers 2011 <a href="http://vimeo.com/30784259">video</a> and <a
+                        href="http://speakerdeck.com/u/maraujop/p/taller-de-django-en-espanol">slides</a>.</li>
+                    </ul>
+                </div>
+
+                <div id="writing">
+                    <h2><img src="img/glasses.png" style="left: -45px; top: 20px;"/>Writing</h2>
+                    <div class="bar"><div id="bar3"></div></div>
+                    <ul>
+                        <li><span class="bullet">_</span><a rel="nofollow"
+                        href="http://tothinkornottothink.com/post/10815277049/django-forms-i-custom-fields-and-widgets-in-detail">Django
+                        Forms I: Custom fields and widgets in detail</a>&nbsp;&nbsp;&nbsp; Sep 29 2011</li>
+ 
+                        <li><span class="bullet">_</span><a rel="nofollow"
+                        href="http://tothinkornottothink.com/post/10398684502/django-uni-form-0-9-0-is-out-security-fix">django-uni-form
+                        0.9.0 is out [security fix]</a>&nbsp;&nbsp;&nbsp; Sep 19 2011</li>
+
+                        <li><span class="bullet">_</span><a rel="nofollow" href="http://tothinkornottothink.com/post/7339670508/new-kung-fu-in-django-uni-form-0-8-0">New kung-fu in django-uni-form 0.8.0</a>&nbsp;&nbsp;&nbsp; Jul 7 2011</li>
+
+                        <li><span class="bullet">_</span><a rel="nofollow" href="http://tothinkornottothink.com/post/7157151391/be-careful-how-you-use-static-variables-in-forms">Be careful how you use static variables in forms</a>&nbsp;&nbsp;&nbsp; Jul 2 2011</li>
+                    </ul>
+                </div>
+
+                <div id="last-hacks">
+                    <h2><img src="img/battery.png" />Last hacks</h2>
+                    <div class="bar"><div id="bar4"></div></div>
+                    <ul>
+                        <li><span class="bullet">_</span>Added <a rel="nofollow" href="https://github.com/kennethreitz/requests/issues/101">Keep-alive support</a> to Python requests.</li>
+                        <li><span class="bullet">_</span>Added <a rel="nofollow" href="https://github.com/omab/django-social-auth/issues/25">Selenium2 testing suite</a> to django-social-auth.</li>
+                        <li><span class="bullet">_</span>Working on a <a rel="nofollow" href="https://github.com/pypa/pip/pull/235">pip list</a> command for pip.</li>
+                    </ul>
+                </div>
+
             </div>
 
-            <h2><img src="img/battery.png" />Last hacks</h2>
-            <div class="bar"><div id="bar1"></div></div>
-            <ul>
-                <li><span class="bullet">_</span>Added <a rel="nofollow" href="https://github.com/kennethreitz/requests/issues/65">OAuth support</a> to <strong>Python Requests</strong>.</li>
-                <li><span class="bullet">_</span>Added <a rel="nofollow" href="https://github.com/kennethreitz/requests/issues/101">Keep-alive support</a> to <strong>Python Requests</strong>.</li>
-                <li><span class="bullet">_</span>Added <a rel="nofollow" href="https://github.com/omab/django-social-auth/issues/25">Selenium2 testing suite</a> to <strong>django-social-auth</strong>.</li>
-                <li><span class="bullet">_</span>Working on a <a rel="nofollow" href="https://github.com/pypa/pip/pull/235">pip list</a> command for <strong>pip</strong>.</li>
-            </ul>
-
-            <h2><img src="img/beaker.png" />Projects</h2>
-            <div class="bar"><div id="bar2"></div></div>
-            <ul>
-                <li><span class="bullet">_</span>Lead developer of <a rel="nofollow" href="https://github.com/pydanny/django-uni-form">django-uni-form</a>: The best way to have DRY Django forms with programmatic layouts.</li>
-                <li><span class="bullet">_</span><a rel="nofollow" href="https://github.com/maraujop/django-rules">django-rules</a>: Flexible and scalable Django authorization backend for unified per object permission management.</li>
-                <li><span class="bullet">_</span><a rel="nofollow" href="https://github.com/maraujop/TracMercurialChangesetPlugin">Trac Mercurial Changeset Plugin</a>: Trac plugin that syncs Mercurial repositories information into Trac's database.</li>
-                <li><span class="bullet">_</span><a rel="nofollow" href="https://github.com/maraujop/princexml-indexer">princeXML indexer</a>: Bash script that automatically generates table of contents/index for princeXML files.</li>
-            </ul>
-
-            <h2><img src="img/coffee.png" />Talks</h2>
-            <div class="bar"><div id="bar3"></div></div>
-            <ul>
-                <li><span class="bullet">_</span><a rel="nofollow" href="http://djangocon.us/schedule/presentations/15/">Advanced Django Form Usage</a> in DjangoCon.us 2011</li>
-            </ul>
-
-            <h2><img src="img/glasses.png" style="left: -45px; top: 20px;"/>Writing</h2>
-            <div class="bar"><div id="bar4"></div></div>
-            <ul>
-                <li><span class="bullet">_</span><a rel="nofollow" href="http://tothinkornottothink.com/post/7339670508/new-kung-fu-in-django-uni-form-0-8-0">New kung-fu in django-uni-form 0.8.0</a>&nbsp;&nbsp;&nbsp; Jul 7 2011</li>
-                <li><span class="bullet">_</span><a rel="nofollow" href="http://tothinkornottothink.com/post/7157151391/be-careful-how-you-use-static-variables-in-forms">Be careful how you use static variables in forms</a>&nbsp;&nbsp;&nbsp; Jul 2 2011</li>
-                <li><span class="bullet">_</span><a rel="nofollow" href="http://tothinkornottothink.com/post/4282971041/using-jquery-templating-icanhaz-js-with-django">Using jQuery templating ICanHaz.js with Django</a>&nbsp;&nbsp;&nbsp; Apr 2 2011</li>
-                <li><span class="bullet">_</span><a rel="nofollow" href="http://tothinkornottothink.com/post/2156476872/django-positivenormalizeddecimalfield">Django PositiveNormalizedDecimalField</a>&nbsp;&nbsp;&nbsp; Dec 9 2010</li>
-            </ul>
+            <div id="designedby"><p>Designed by Miguel Araujo. Icons by <a rel="nofollow" href="http://glyphish.com/">Joseph Wain</a></p></div>
         </div>
-
-        <div id="designedby"><p>Designed by Miguel Araujo. Icons by <a rel="nofollow" href="http://glyphish.com/">Joseph Wain</a></p></div>
     </body>
 </html>
